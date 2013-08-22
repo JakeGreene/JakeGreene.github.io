@@ -1,7 +1,12 @@
+---
+nav-width: 700
+nav-icon-width: 90
+---
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -169,7 +174,22 @@ p.tagline {
 }
 
 .download-bar a.code {
-  background: transparent url(../images/code.png) no-repeat 0 2px;
+  background: transparent url(../images/resume.png) no-repeat 0 2px;
+  padding-left: 35px;
+  margin-top: 3px;
+  display: block;
+  float: left;
+  font-size: 20px;
+  text-indent: 0;
+  width: auto;
+  height: auto;
+  opacity: 1;
+  -moz-opacity: 1;
+  filter:alpha(opacity=1);
+}
+
+.download-bar a.stack {
+  background: transparent url(../images/stack.png) no-repeat 0 2px;
   padding-left: 35px;
   margin-top: 8px;
   display: block;
@@ -181,6 +201,43 @@ p.tagline {
   -moz-opacity: 1;
   filter:alpha(opacity=1);
 }
+
+.navbar {
+    margin: 0px;
+    padding: 0px;
+    width: {{page.nav-width}}px;
+    list-style: none;
+    background: #222;
+}
+
+.navbar li {
+    float: left;
+    height: 39px;
+    list-style: none;
+    background-repeat: no-repeat;
+}
+
+.navbar li a, .navbar li a:visited {
+    display: block;
+    text-decoration: none;
+    text-indent: -9999px;
+    height: 39px;
+    background-repeat: no-repeat;
+}
+
+.home {background-image: url(../images/home.png); width: {{page.nav-icon-width}}px;}
+.home a {background-image: url(../images/home.png); width: {{page.nav-icon-width}}px;}
+.blog {background-image: url(../images/blog.png); width: {{page.nav-icon-width}}px;}
+.blog a {background-image: url(../images/blog.png); width: {{page.nav-icon-width}}px;}
+.code {background-image: url(../images/code.png); width: {{page.nav-icon-width}}px;}
+.code a {background-image: url(../images/code.png); width: {{page.nav-icon-width}}px;}
+.resume {background-image: url(../images/resume.png); width: {{page.nav-icon-width}}px;}
+.resume a {background-image: url(../images/resume.png); width: {{page.nav-icon-width}}px;}
+.github {background-image: url(../images/github.png); width: {{page.nav-icon-width}}px;}
+.github a {background-image: url(../images/github.png); width: {{page.nav-icon-width}}px;}
+.stack {background-image: url(../images/stack.png); width: {{page.nav-icon-width}}px;}
+.stack a {background-image: url(../images/stack.png); width: {{page.nav-icon-width}}px;}
+.navbar:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
 
 .current-section {
   position: fixed;
@@ -252,6 +309,19 @@ a.tar span {
   -webkit-transition: opacity ease-in-out 0.3s;
 }
 
+a.stack,
+a.stack span {
+  background: transparent url(../images/stack.png) no-repeat 0 0;
+  width: 30px;
+  height: 21px;
+  opacity: 0.8;
+  display: inline-block;
+  text-indent: -10000px;
+  -moz-opacity: 0.8;
+  filter:alpha(opacity=8);
+  -webkit-transition: opacity ease-in-out 0.3s;
+}
+
 a.code {
   background: transparent url(../images/code.png) no-repeat 0 2px;
   width: 30px;
@@ -267,6 +337,7 @@ a.code {
 
 a.zip:hover,
 a.tar:hover,
+a.stack:hover,
 a.code:hover {
   opacity: 1;
   -moz-opacity: 1;
