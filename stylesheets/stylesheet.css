@@ -1,6 +1,7 @@
 ---
 nav-width: 700
 nav-icon-width: 90
+nav-images: /images/nav
 ---
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -225,18 +226,18 @@ p.tagline {
     background-repeat: no-repeat;
 }
 
-.home {background-image: url(../images/home.png); width: {{page.nav-icon-width}}px;}
-.home a {background-image: url(../images/home.png); width: {{page.nav-icon-width}}px;}
-.blog {background-image: url(../images/blog.png); width: {{page.nav-icon-width}}px;}
-.blog a {background-image: url(../images/blog.png); width: {{page.nav-icon-width}}px;}
-.code {background-image: url(../images/code.png); width: {{page.nav-icon-width}}px;}
-.code a {background-image: url(../images/code.png); width: {{page.nav-icon-width}}px;}
-.resume {background-image: url(../images/resume.png); width: {{page.nav-icon-width}}px;}
-.resume a {background-image: url(../images/resume.png); width: {{page.nav-icon-width}}px;}
-.github {background-image: url(../images/github.png); width: {{page.nav-icon-width}}px;}
-.github a {background-image: url(../images/github.png); width: {{page.nav-icon-width}}px;}
-.stack {background-image: url(../images/stack.png); width: {{page.nav-icon-width}}px;}
-.stack a {background-image: url(../images/stack.png); width: {{page.nav-icon-width}}px;}
+.home {background-image: url({{page.nav-images}}/home.png); width: {{page.nav-icon-width}}px;}
+.home a {background-image: url({{page.nav-images}}/home.png); width: {{page.nav-icon-width}}px;}
+.blog {background-image: url({{page.nav-images}}/blog.png); width: {{page.nav-icon-width}}px;}
+.blog a {background-image: url({{page.nav-images}}/blog.png); width: {{page.nav-icon-width}}px;}
+.code {background-image: url({{page.nav-images}}/code.png); width: {{page.nav-icon-width}}px;}
+.code a {background-image: url({{page.nav-images}}/code.png); width: {{page.nav-icon-width}}px;}
+.resume {background-image: url({{page.nav-images}}/resume.png); width: {{page.nav-icon-width}}px;}
+.resume a {background-image: url({{page.nav-images}}/resume.png); width: {{page.nav-icon-width}}px;}
+.github {background-image: url({{page.nav-images}}/github.png); width: {{page.nav-icon-width}}px;}
+.github a {background-image: url({{page.nav-images}}/github.png); width: {{page.nav-icon-width}}px;}
+.stack {background-image: url({{page.nav-images}}/stack.png); width: {{page.nav-icon-width}}px;}
+.stack a {background-image: url({{page.nav-images}}/stack.png); width: {{page.nav-icon-width}}px;}
 .navbar:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
 
 .current-section {
