@@ -1,2 +1,3 @@
 name: Jake Greene
-exclude: README.md
+exclude: [README.md]
+pigments: true
