@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "default"
 icon: "&#9749;"
 ---
 Java's Failed Attempt At Immutability
