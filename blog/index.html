@@ -5,7 +5,7 @@ layout: default
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">
-        <span class="blog-entry-icon">A</span>
+        <span class="blog-entry-icon">{{ post.icon }}</span>
         <div class="blog-entry-headers">
           <h3 class="blog-entry-header">{{ post.title }}</h3>
           <h2 class="blog-entry-sub">{{ post.date | date: "%d %B %Y" }}</h2>

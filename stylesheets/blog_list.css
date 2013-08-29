@@ -1,7 +1,8 @@
 ---
 font-home: /fonts
 font-web: webhostinghub-glyphs-webfont
-font-name: webhostinghub-glyphsregular
+font-free: FreeSerif
+font-name: FreeSerifregular
 
 accent-colour: 63a52a
 elem-background: 343434
@@ -10,14 +11,14 @@ listing-width: 550px
 
 @font-face {
   font-family: '{{ page.font-name }}';
-  src: url('{{ page.font-home }}/{{ page.font-web }}.eot');
-  src: url('{{ page.font-home }}/{{ page.font-web }}.eot?#iefix') format('embedded-opentype'),
-       url('{{ page.font-home }}/{{ page.font-web }}.woff') format('woff'),
-       url('{{ page.font-home }}/{{ page.font-web }}.ttf') format('truetype'),
-       url('{{ page.font-home }}/{{ page.font-web }}.svg#{{ page.font-name }}') format('svg');
+  src: url('{{ page.font-home }}/{{ page.font-free }}.eot');
+  src: url('{{ page.font-home }}/{{ page.font-free }}.eot?#iefix') format('embedded-opentype'),
+       url('{{ page.font-home }}/{{ page.font-free }}.woff') format('woff'),
+       url('{{ page.font-home }}/{{ page.font-free }}.ttf') format('truetype'),
+       url('{{ page.font-home }}/{{ page.font-free }}.svg#{{ page.font-name }}') format('svg');
   font-weight: normal;
   font-style: normal;
-  
+
 }
 
 /* A list of blog entries */
@@ -58,8 +59,8 @@ listing-width: 550px
 
 /* The icon */
 .blog-entry-icon {
-  font-family: '{{ page.font-name }}';
-  font-size: 20px;
+  font-family: {{ page.font-name }};
+  font-size: 30px;
   text-shadow: 0px 0px 1px #333;
   line-height: 90px;
   position: absolute;
@@ -110,7 +111,7 @@ h2.blog-entry-sub {
 .blog-entries li:hover .blog-entry-icon {
   color: #{{ page.accent-colour }};
   text-shadow: 0px 0px 1px #fff004;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .blog-entries li:hover .blog-entry-header {

@@ -1,5 +1,6 @@
 ---
 layout: default
+icon: &#9749;
 ---
 Java Geometry
 ============
