@@ -2,6 +2,10 @@
 font-home: /fonts
 font-web: webhostinghub-glyphs-webfont
 font-name: webhostinghub-glyphsregular
+
+accent-colour: 63a52a
+elem-background: 343434
+listing-width: 550px
 ---
 
 @font-face {
@@ -20,11 +24,11 @@ font-name: webhostinghub-glyphsregular
 .blog-entries {
   padding: 0;
   margin: 20px 0;
-  width: 500px;
+  width: {{ page.listing-width }};
 }
 
 .blog-entries li {
-  width: 500px;
+  width: {{ page.listing-width }};
   height: 100px;
   overflow: hidden;
   display: block;
@@ -99,18 +103,18 @@ h2.blog-entry-sub {
 }
 
 .blog-entries li:hover {
-  border-color: #63a52a;
-  background: #343434;
+  border-color: #{{ page.accent-colour }};
+  background: #{{ page.elem-background}};
 }
 
 .blog-entries li:hover .blog-entry-icon {
-  color: #63a52a;
+  color: #{{ page.accent-colour }};
   text-shadow: 0px 0px 1px #fff004;
   font-size: 50px;
 }
 
 .blog-entries li:hover .blog-entry-header {
-  color: #63a52a;
+  color: #{{ page.accent-colour }};
 }
 
 .blog-entries li:hover .blog-entry-sub {
