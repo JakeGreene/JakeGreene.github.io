@@ -1,6 +1,6 @@
 ---
 layout: default
-icon: &#9728;
+icon: "&#9728;"
 ---
 Hello World
 ===========
