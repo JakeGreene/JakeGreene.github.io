@@ -8,7 +8,7 @@ layout: default
         <span class="blog-entry-icon">A</span>
         <div class="blog-entry-headers">
           <h3 class="blog-entry-header">{{ post.title }}</h3>
-          <h2 class="blog-entry-sub">Blog</h2>
+          <h2 class="blog-entry-sub">{{ post.date | date: "%d %B %Y" }}</h2>
         </div>
       </a>
     </li>
