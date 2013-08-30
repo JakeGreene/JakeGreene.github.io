@@ -1,3 +1,5 @@
 name: Jake Greene
-exclude: [README.md]
+exclude: 
+  - README.md
+  - CNAME
 pigments: true
