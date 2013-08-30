@@ -7,6 +7,8 @@ font-name: FreeSerifregular
 accent-colour: 63a52a
 elem-background: 343434
 listing-width: 550px
+
+sub-colour: 666
 ---
 
 @font-face {
@@ -95,7 +97,7 @@ h3.blog-entry-header {
 /* The sub-heading for a blog entry */
 h2.blog-entry-sub {
   font-size: 14px;
-  color: #666;
+  color: #{{ page.sub-colour }};
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
@@ -120,4 +122,18 @@ h2.blog-entry-sub {
 
 .blog-entries li:hover .blog-entry-sub {
   color: #fff;
+}
+
+div.blog-headers {
+  margin-left: 30px;
+}
+
+h1.blog-header {
+  margin-bottom: 0; 
+}
+
+h4.blog-sub {
+  margin: 0;
+  font-size: 15px;
+  color: #{{ page.sub-colour }};
 }
