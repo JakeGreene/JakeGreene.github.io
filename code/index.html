@@ -3,6 +3,11 @@ layout: default
 projects:
   - name: Space Command
     logo: space-command-logo.png
+    page: space-command
+    description: >
+                   A co-operative, 2D, top-down space fighter,
+                   Space Command was a project shared by myself
+                   and three of my friends.
 ---
 
 <div class="project-headers">
@@ -12,11 +17,11 @@ projects:
 <ul class="project-entries">
   {% for project in page.projects %}
     <li>
-      <a href="#">
+      <a href="{{ site.url}}/code/{{ project.page }}">
         <img class="project-logo" src="/images/projects/{{ project.logo }}"/>
         <div class="project-entry-headers">
           <h3 class="project-entry-header">{{ project.name }}</h3>
-          <h2 class="project-entry-sub">Project description</h2>
+          <h2 class="project-entry-sub">{{ project.description }}</h2>
         </div>
       </a>
     </li>
