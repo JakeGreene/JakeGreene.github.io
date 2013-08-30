@@ -1,12 +1,24 @@
 ---
-categories: ['work', 'play']
+layout: default
+projects:
+  - name: Space Command
+    logo: space-command-logo.png
 ---
 
-<html>
-  <head>
-    <link rel="stylesheet" href="/stylesheets/test.css"/>
-  </head>
-  <body>
-    <p>{{ page.categories}}</p>
-  </body>
-</html>
+<div class="project-headers">
+  <h1 class="project-header">Projects</h1>
+  <h4 class="project-sub">How I use my spare time</h4>
+</div>
+<ul class="project-entries">
+  {% for project in page.projects %}
+    <li>
+      <a href="#">
+        <img class="project-logo" src="/images/projects/{{ project.logo }}"/>
+        <div class="project-entry-headers">
+          <h3 class="project-entry-header">{{ project.name }}</h3>
+          <h2 class="project-entry-sub">Project description</h2>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
