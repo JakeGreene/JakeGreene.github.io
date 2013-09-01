@@ -25,7 +25,7 @@ Each of those major points requires a 'one-step' path from the home page to the 
 * "Links." Who ever clicks on a generic links page? Useful links should be moved to their relevant pages so that the user can see the link the same moment they might have need of it eg. TARION should be with the New Home Warranty information
 
 ###Style
-The Greene Homes' logo is green-on-white and the colours of the site should reflect that. These colours - accented by dark greys - are "clean" and have a certain air of professionalism. The site will trend more towards minimalism than the current site by not assaulting the viewer with too many pictures and links but the site will not be barren and uninviting.
+The Greene Homes' logo is green-on-white and the colours of the site should reflect that. These colours - accented by dark greys - are "clean" and have a certain air of professionalism. The site will trend more towards minimalism than the current site by not assaulting the viewer with too many pictures and links. At the same time, the site can not be barren and uninviting; the current disinfected and squeaky clean look of most modern-day business sites does not give the comfortable and "homey" feeling a potential home-buyer needs to feel.
 
 A major seller for homes is great interior shots. The current site has a photo gallery but it is unorganized and none of the photos are singled out and allowed to "pop." It is my belief that the site should have a much stronger emphasis on photos of the homes and much less emphasis on text and information; the user is at the site to be sold and should be given just enough information to tease them into contacting Greene Homes.
 
