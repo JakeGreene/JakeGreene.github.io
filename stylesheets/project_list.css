@@ -84,6 +84,7 @@ h3.project-entry-header {
 h2.project-entry-sub {
   font-size: 14px;
   color: #{{ page.sub-colour }};
+  margin-right: 5px;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
