@@ -15,6 +15,7 @@ site: http://www.jakegreene.ca
   <link rel="stylesheet" href="{{site.url}}/stylesheets/pygment_trac.css"/>
   <link rel="stylesheet" href="{{site.url}}/stylesheets/blog_list.css"/>
   <link rel="stylesheet" href="{{site.url}}/stylesheets/project_list.css"/>
+  <link rel="stylesheet" href="{{site.url}}/stylesheets/nav.css"/>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
 
@@ -34,19 +35,8 @@ site: http://www.jakegreene.ca
     <div id="container">
       <p class="tagline">My personal website</p>
       <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <ul class="navbar">
-            <li class="home"><a href="{{site.url}}/">Home</a></li>
-            <li class="blog"><a href="{{site.url}}/blog">Blog</a></li>
-            <li class="code"><a href="{{site.url}}/code">Code</a></li>
-            <li class="resume"><a href="{{site.url}}/resume">Resume</a></li>
-            <li class="github"><a href="https://github.com/JakeGreene">GitHub</a></li>
-            <li class="stack"><a href="http://stackoverflow.com/users/382110/jake-greene">Stack Overflow</a></li>
-          </ul>
-        </div>
+        {% include nav-bar.html %}
         <span class="blc"></span><span class="trc"></span>
-        </div>
         <article class="markdown-body">
           {{ content }}
         </article>
