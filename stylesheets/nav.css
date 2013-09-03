@@ -4,13 +4,15 @@ font-free: FreeSerif
 font-name: FreeSerifregular
 
 nav-width: "750px"
-nav-height: "100px"
+nav-height: "75px"
 nav-item-padding: "5px 50px"
 nav-item-width: "100px"
-nav-item-height: "90px"
-background-color: "#343434"
+nav-item-height: "75px"
+background-color: "#222"
+border-color: "#444"
 accent-color: "#63a52a"
 icon-color: "#bbb"
+icon-transition-time: "200ms"
 ---
 
 @font-face {
@@ -31,7 +33,7 @@ icon-color: "#bbb"
   overflow: hidden;
   background-color: {{ page.background-color }};
   border-style: solid;
-  border-color: #999;
+  border-color: {{ page.border-color }};
   border-width: 5px;
   padding: 0;
   margin: 0 0;
@@ -56,7 +58,7 @@ icon-color: "#bbb"
 }
 
 #last-nav-internal {
-  border-right: 5px solid {{ page.icon-color }};
+  border-right: 5px solid {{ page.border-color }};
   padding-right: 10px;
   margin-right: 10px
 }
@@ -74,8 +76,9 @@ icon-color: "#bbb"
   padding: 0;
   margin: 0;
   color: #999;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
+  z-index: -1;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
@@ -85,6 +88,7 @@ icon-color: "#bbb"
 
 .site-nav-list li:hover a p {
   color: {{ page.background-color }};
+  visibility: hidden;
 }
 
 .ext-nav-icon {
@@ -98,11 +102,11 @@ icon-color: "#bbb"
 }
 
 .site-nav-list li img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   /* Shift it to take in to account that the top left is currently centred */
-  margin-top: -25px;
-  margin-left: -25px;
+  margin-top: -20px;
+  margin-left: -20px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -114,28 +118,28 @@ icon-color: "#bbb"
 }
 
 .site-nav-list li:hover img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   top: 70%;
-  margin-top: -35px;
-  margin-left: -35px;
+  margin-top: -25px;
+  margin-left: -25px;
 }
 
 .nav-icon {
   font-family: {{ page.font-name }};
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
   display: block;
   width: 100%;
   height: 75%;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  -ms-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all {{ page.icon-transition-time }} ease-in-out;
+  -moz-transition: all {{ page.icon-transition-time }} ease-in-out;
+  -o-transition: all {{ page.icon-transition-time }} ease-in-out;
+  -ms-transition: all {{ page.icon-transition-time }} ease-in-out;
+  transition: all {{ page.icon-transition-time }} ease-in-out;
 }
 
 .site-nav-list li:hover a .nav-icon {
-  font-size: 70px;
+  font-size: 55px;
   color: {{ page.accent-color }};
 }
